@@ -1376,7 +1376,6 @@ header.header-mobile.header-light #menu-btn {
 /* ================================================== */
 
 section {
-  padding: 120px 0 120px 0;
   position: relative;
 }
 
@@ -7002,7 +7001,7 @@ i.font60 {
 /* ////........Media Query........//// */
 
 @media (max-width: 700px) {
-  .d-skills {
+ .d-skills {
     width: 80%;
   }
 
@@ -9734,10 +9733,7 @@ object {
 .button_link a.button.btn-main {
     color: var(--bg-dark-2) !important;
 }
-.cta_buttons .button:not(.btn-main),
-li.button_link a.button{
-  margin-left: 20px;
-}
+
 span.button_link + span.button_link a {
     border: 1px solid var(--primary-color);
     display: inline-block;
@@ -9745,6 +9741,85 @@ span.button_link + span.button_link a {
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px){
+.cta_buttons .button:not(.btn-main),
+li.button_link a.button{
+  margin-left: 20px;
+}
+section {
+  padding: 120px 0 120px 0;
+}
+}
+@media screen and (max-width: 767px){
+  .lose_sale .row.gx-5, .expertise .row.g-4{
+    position: relative;
+    flex-wrap: inherit;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding-left: 1.5rem;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: -1px;
+  }
+  .lose_sale .col-lg-4, .expertise .col-lg-4 {
+    max-width: calc(100% - 70px);
+    padding-right: 0;
+}
+.lose_sale  .de-skill-item.p-5, .expertise  .de-skill-item.p-5 {
+    padding: 2rem 10px !important;
+}
+#section-contact .col-lg-4 {
+    padding-top: 60px;
+}
+.de-marquee-list .d-item-txt {
+    font-size: 78px !important;
+    line-height: 89px !important;
+  }
+  footer .row > * {
+    width: 50%;
+    max-width: 50%;
+}
+.d_timeline-text {
+    padding: 0 0 40px 15px !important;
+}
+.dark-scheme .d_timeline-title {
+    margin-left: -10px !important;
+}
+.d_timeline-title:before {
+    left: -10px !important;
+    width: 36px !important;
+    height: 36px !important;
+    line-height: 36px !important;
+  }
+  #mainmenu li.button_link {
+    display: none !important;
+}
+.d_timeline {
+    padding-left: 5px !important;
+}
+.cta_buttons .button:not(.btn-main),
+li.button_link a.button{
+  margin-top: 20px;
+}
+.pd50.col-lg-3 {
+  padding-top: 70px;
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+}
+.caption_txt.txt_space {
+    line-height: 1.2;
+}
+.expertise .de-skill-item.p-5 {
+    padding: 2rem 10px !important;
+}
+section {
+  padding: 80px 0 80px 0;
+}
+p.lead {
+  font-size: 16px  !important;
+    line-height: 1.5em  !important;
+  }
 }
 /* ================================================== */
 
@@ -16333,6 +16408,22 @@ a.read_more i {
 /* 5 columns */
 
 @media (max-width: 767px) {
+  .jarallax  .row.align-items-center {
+    padding: 100px 0;
+}
+ .jarallax  .h1_big, h1.ultra-big {
+        font-size: 24px;
+        line-height: 32px;
+        min-height: 100px;
+    }
+  .jarallax  .typed, .jarallax  .typed-strings {
+    display: block;
+}
+.jarallax  
+span.typed-cursor {
+    display: none;
+}
+ 
   .col-lg-1-7 {
     width: 100%;
   }
@@ -17700,6 +17791,7 @@ img {
 h5.wow.fadeInUp.view_all_portfolio{
     background: var(--primary-color);
     color: #000;
+    margin-top: 3px;
 }
 .blogPop.galleryPort .blogClose {
     position: absolute;
@@ -18958,7 +19050,7 @@ h5.wow.fadeInUp.view_all_portfolio{
     width: 160px;
   }
   #section-resume .de-skill-item.p-5 {
-    padding: 2rem 1rem !important;
+    padding: 1rem !important;
   }
   header.header-v2 .de-flex.sm-pt10 {
     padding: 0;
